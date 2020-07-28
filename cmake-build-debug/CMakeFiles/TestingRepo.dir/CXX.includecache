@@ -15,8 +15,6 @@ iostream
 -
 wchar.h
 -
-mbstring.h
--
 tchar.h
 -
 stdio.h
