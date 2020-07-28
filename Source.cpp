@@ -90,8 +90,8 @@ void call_wcscpy_S() { //code taken from https://en.cppreference.com/w/c/string/
 }
 
 void ppath() {
-char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR], fname[_MAX_FNAME], ext[1];
-	/*TCHAR name[7];
+/*char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR], fname[_MAX_FNAME], ext[1];
+	TCHAR name[7];
 	errno_t err;
 
 	_makepath(path_buffer, "c", "\\sample\\crt\\",	"crt_makepath_s", "c");
@@ -124,7 +124,7 @@ void call_strn_S() {
 	printf("s2 = %s, r2 = %d\n", s2, r2);
 	char s3[7] = "hello";
 	//int r3 = strncat_s(s3, 7, "Xb", -1); // r3 is non-zero, s3 holds "\0"
-	strncat_s(s3, "Xb", -1);
+	//strncat_s(s3, "Xb", -1);
 	printf("s3 = %s, r3 = \n", s3);
 	// the strncat_s truncation idiom:
 	char s4[7] = "abc";
