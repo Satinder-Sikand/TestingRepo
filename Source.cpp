@@ -3,7 +3,6 @@
 #include <iostream>
 #include <wchar.h>
 #include <stdio.h>
-#include <atlstr.h>
 
 
 #undef _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES
@@ -88,17 +87,16 @@ void call_wcscpy_S() { //code taken from https://en.cppreference.com/w/c/string/
 
 
 
-	std::wcout << _T("String = ") << string << std::endl;
 }
 
 void ppath() {
 char path_buffer[_MAX_PATH], drive[_MAX_DRIVE], dir[_MAX_DIR], fname[_MAX_FNAME], ext[1];
-	TCHAR name[7];
+	/*TCHAR name[7];
 	errno_t err;
 
 	_makepath(path_buffer, "c", "\\sample\\crt\\",	"crt_makepath_s", "c");
 	printf("Path extracted with _makepath: %s\n", path_buffer);
-	
+	*/
 }
 
 void call_strn_S() {
