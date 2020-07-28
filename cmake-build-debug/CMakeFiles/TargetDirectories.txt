@@ -1,0 +1,3 @@
+C:/Users/satinder.sikand/source/repos/TestingRepo/cmake-build-debug/CMakeFiles/TestingRepo.dir
+C:/Users/satinder.sikand/source/repos/TestingRepo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/satinder.sikand/source/repos/TestingRepo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
