@@ -61,8 +61,8 @@ void call_strcpy_S() {
 	strncpy(str2, str1, -1);
 	strcpy(str3, str1);
 	//trncpy(str3, str1, -1);
-	_itoa(10000, str2, 10);
-	_itoa(10000, str3, 10);
+	//_itoa(10000, str2, 10);
+	//_itoa(10000, str3, 10);
 
 	//_tcsnlen(str3, 5);
 	
@@ -143,7 +143,7 @@ void useStruct() {
 	//strncpy(test1.string2, "ThisIsAGoodFunction", -1);
 	//printf("\nTest String is: %s", test1.string2);
 	struct product* test2 =  (struct product*)malloc(30);
-	strncpy(test2->string1, "ThisIsAGoodFunction", _TRUNCATE);
+	strncpy(test2->string1, "ThisIsAGoodFunction", -1);
 	printf("\nTest String is: %s", test2->string1);
 	strncpy(test2->string2, "ThisIsAGoodFunction", -1);
 }
