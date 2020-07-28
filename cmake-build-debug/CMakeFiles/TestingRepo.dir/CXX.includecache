@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/satinder.sikand/source/repos/TestingRepo/Source.cpp
+cstdio
+-
+string.h
+-
+iostream
+-
+wchar.h
+-
+mbstring.h
+-
+tchar.h
+-
+stdio.h
+-
+atlstr.h
+-
+

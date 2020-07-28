@@ -60,12 +60,12 @@ void call_strcpy_S() {
 	const char* str1 = "ThisIsAString.";
 	char str2[6] = "";// = new char[6];
 	//char* str3 = str2;
-	//strcpy(str2, str1);
+	strcpy(str2, str1);
 	strncpy(str2, str1, -1);
-	//strcpy(str3, str1);
-	//strncpy(str3, str1, -1);
-	//_itoa(10000, str2, 10);
-	//_itoa(10000, str3, 10);
+	strcpy(str3, str1);
+	//trncpy(str3, str1, -1);
+	_itoa(10000, str2, 10);
+	_itoa(10000, str3, 10);
 
 	//_tcsnlen(str3, 5);
 	
@@ -85,8 +85,8 @@ void call_wcscpy_S() { //code taken from https://en.cppreference.com/w/c/string/
 	wcscat(string2, L"and ");
 	// of course we can supply the size explicitly if we want to:
 	wcscat(string, L"wcscat_s!");
-	_tcsncat(string, _T("wcscat_sIsHERE!"), -1);
-	_tcsncat(string2, _T("wcscat_sIsHERE!"), -1);
+	//_tcsncat(string, _T("wcscat_sIsHERE!"), -1);
+	//_tcsncat(string2, _T("wcscat_sIsHERE!"), -1);
 
 
 
@@ -152,7 +152,7 @@ void useStruct() {
 	strncpy(test2->string2, "ThisIsAGoodFunction", -1);
 }
 
-void InvalidParameterHandleExample(
+/*void InvalidParameterHandleExample(
 	const wchar_t* expression,
 	const wchar_t* function,
 	const wchar_t* file,
@@ -161,4 +161,4 @@ void InvalidParameterHandleExample(
 {
 	// handle here
 	printf("\n%s\n%s\n%s", function, file, line);
-}
+}*/
