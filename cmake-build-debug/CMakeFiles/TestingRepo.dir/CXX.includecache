@@ -15,8 +15,6 @@ iostream
 -
 wchar.h
 -
-tchar.h
--
 stdio.h
 -
 atlstr.h

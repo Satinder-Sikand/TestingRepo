@@ -2,7 +2,6 @@
 #include <string.h>
 #include <iostream>
 #include <wchar.h>
-#include <tchar.h>
 #include <stdio.h>
 #include <atlstr.h>
 
